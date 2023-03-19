@@ -1,6 +1,6 @@
-# camera_intelligent_autozoom
+# Camera intelligent autozoom - Flutter
 
-A new Flutter project.
+Qualification task for Flutter - CCExtractor Development.
 
 ## Getting Started
 
