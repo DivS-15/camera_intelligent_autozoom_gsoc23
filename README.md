@@ -1,6 +1,6 @@
 # Camera intelligent autozoom - Flutter
 
-Qualification task for Flutter - CCExtractor Development.
+[Qualification task for Flutter](https://ccextractor.org/public/gsoc/takehome/#camera-with-intelligent-autozoom-in-flutter) - CCExtractor Development.
 
 ## Working logic of this app
 
@@ -42,6 +42,10 @@ runModel() async {
   
 
 ## Screenshots
+
+_Camera zooms to the chair because it has the highest probabilty of being in the foreground. Then it zooms to the laptop because camera is moved_
+
+![](https://github.com/DivS-15/camera_intelligent_autozoom_gsoc23/blob/master/gsoc23_1.gif)
 
 
 ## Getting Started
