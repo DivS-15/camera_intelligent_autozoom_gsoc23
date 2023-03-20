@@ -1,12 +1,12 @@
 # Camera intelligent autozoom - Flutter
 
-[Qualification task for Flutter](https://ccextractor.org/public/gsoc/takehome/#camera-with-intelligent-autozoom-in-flutter) - CCExtractor Development.
+#### [Qualification task for GSoC 2023](https://ccextractor.org/public/gsoc/takehome/#camera-with-intelligent-autozoom-in-flutter) - CCExtractor Development.
 
 ## Working logic of this app
 
 - Camera preivew gives livestream of the objects
 - this livestream is loaded into the **tflite** model
-- we run the model & get the percentage confidence (probabilities) of the detected object
+- we run the model & get the **percentage confidence** (probabilities) of the detected object
 - if the **confidence** > 60 % then the object is assumed to be in foreground
 - camera zooms on that object
 
@@ -43,7 +43,7 @@ runModel() async {
 
 ## Screenshots
 
-_Camera zooms to the chair because it has the highest probabilty of being in the foreground. Then it zooms to the laptop because camera is moved_
+_Camera zooms to the chair because it has the highest probabilty (>= 60%) of being in the foreground. Then it zooms to the laptop since the camera is moved_
 
 ![](https://github.com/DivS-15/camera_intelligent_autozoom_gsoc23/blob/master/gsoc23_1.gif)
 
