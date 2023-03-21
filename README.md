@@ -10,38 +10,7 @@
 - if the **confidence** > 60 % then the object is assumed to be in foreground
 - camera zooms on that object
 
-### Accompanying code
-
-```dart
-runModel() async {
-    recognitionsList = (await Tflite.detectObjectOnFrame(
-      bytesList: cameraImage.planes.map((plane) {
-        return plane.bytes;
-      }).toList(),
-      imageHeight: cameraImage.height,
-      imageWidth: cameraImage.width,
-      imageMean: 127.5,
-      imageStd: 127.5,
-      numResultsPerClass: 1,
-      threshold: 0.4,
-    ))!;
-    recognitionsList.forEach((element) {
-      if (element['confidenceInClass'] >= 0.6) {
-        setState(() {
-          cameraController.setZoomLevel(3.0);
-        });
-      }
-    });
-
-    setState(() {
-      cameraImage;
-    });
-  }
-  
-  ```
-  
-
-## Screenshots
+## Look & feel of the app
 
 _Camera zooms to the chair because it has the highest probabilty (>= 60%) of being in the foreground. Then it zooms to the laptop since the camera is moved_
 
