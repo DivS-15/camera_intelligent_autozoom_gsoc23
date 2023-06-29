@@ -1,5 +1,7 @@
 # Camera intelligent autozoom - Flutter
 
+### Description
+This app demonstrates Google's Tflite library in Flutter to detect objects using camera (by leveraging object detection model). The camera autozooms to any object in the foreground if its probability is more than 60%.
 
 ## Working logic of this app
 
@@ -20,7 +22,7 @@ _Camera zooms to the chair because it has the highest probabilty (>= 60%) of bei
 
 ### Build this project
 
-1. Dependencies
+Add the following dependencies in order to build this project in your local machine:
 
 Camera package - 
 
