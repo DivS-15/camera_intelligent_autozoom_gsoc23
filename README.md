@@ -1,6 +1,5 @@
 # Camera intelligent autozoom - Flutter
 
-#### [Qualification task for GSoC 2023](https://ccextractor.org/public/gsoc/takehome/#camera-with-intelligent-autozoom-in-flutter) - CCExtractor Development.
 
 ## Working logic of this app
 
